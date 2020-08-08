@@ -1,0 +1,167 @@
+@duration: 1.5s;
+
+.icons {
+  margin: 0 auto 30px;
+  width: 120px;
+  height: 50px;
+  background: rgba(255, 255, 255, 1);
+
+  div {
+    display: inline-block;
+    position: relative;
+    margin: 10px 0;
+    width: 30px;
+    height: 30px;
+  }
+
+  div div {
+    border-radius: 100%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: scale(1, 1) translate(-50%, -50%);
+    transform-origin: 0 0;
+  }
+
+  .red {
+    div {
+      width: 20px;
+      height: 20px;
+      background-color: #ff552e;
+      animation: resize1 @duration linear infinite;
+      -webkit-animation: resizeRed @duration linear infinite;
+
+      @keyframes resizeRed {
+        0%,
+        100% {
+          transform: scale(1, 1) translate(-50%, -50%);
+        }
+
+        16.67%,
+        83.33% {
+          transform: scale(0.8, 0.8) translate(-50%, -50%);
+        }
+
+        33.33%,
+        66.67% {
+          transform: scale(0.6, 0.6) translate(-50%, -50%);
+        }
+
+        50% {
+          transform: scale(0.4, 0.4) translate(-50%, -50%);
+        }
+      }
+    }
+  }
+
+  .blue {
+    div {
+      width: 16px;
+      height: 16px;
+      background-color: #3e80f8;
+      animation: resize2 @duration linear infinite;
+      -webkit-animation: resizeBlue @duration linear infinite;
+
+      @keyframes resizeBlue {
+        0% {
+          transform: scale(1, 1) translate(-50%, -50%);
+        }
+
+        16.67% {
+          transform: scale(1.25, 1.25) translate(-50%, -50%);
+        }
+
+        33.33% {
+          transform: scale(1, 1) translate(-50%, -50%);
+        }
+
+        50% {
+          transform: scale(0.75, 0.75) translate(-50%, -50%);
+        }
+
+        66.67% {
+          transform: scale(0.5, 0.5) translate(-50%, -50%);
+        }
+
+        83.33% {
+          transform: scale(0.75, 0.75) translate(-50%, -50%);
+        }
+
+        100% {
+          transform: scale(1, 1) translate(-50%, -50%);
+        }
+      }
+    }
+  }
+
+  .green {
+    div {
+      width: 12px;
+      height: 12px;
+      background-color: #53e7ae;
+      animation: resize3 @duration linear infinite;
+      -webkit-animation: resizeGreen @duration linear infinite;
+
+      @keyframes resizeGreen {
+        0% {
+          transform: scale(1, 1) translate(-50%, -50%);
+        }
+
+        16.67% {
+          transform: scale(4/3, 4/3) translate(-50%, -50%);
+        }
+
+        33.33% {
+          transform: scale(5/3, 5/3) translate(-50%, -50%);
+        }
+
+        50% {
+          transform: scale(4/3, 4/3) translate(-50%, -50%);
+        }
+
+        66.67% {
+          transform: scale(1, 1) translate(-50%, -50%);
+        }
+
+        83.33% {
+          transform: scale(2/3, 2/3) translate(-50%, -50%);
+        }
+
+        100% {
+          transform: scale(1, 1) translate(-50%, -50%);
+        }
+      }
+    }
+  }
+
+  .yellow {
+    div {
+      width: 8px;
+      height: 8px;
+      background-color: #ffce5a;
+      animation: resize4 @duration linear infinite;
+      -webkit-animation: resizeYellow @duration linear infinite;
+
+      @keyframes resizeYellow {
+        0%,
+        100% {
+          transform: scale(1, 1) translate(-50%, -50%);
+        }
+
+        16.67%,
+        83.33% {
+          transform: scale(3/2, 3/2) translate(-50%, -50%);
+        }
+
+        33.33%,
+        66.67% {
+          transform: scale(2, 2) translate(-50%, -50%);
+        }
+
+        50% {
+          transform: scale(5/2, 5/2) translate(-50%, -50%);
+        }
+      }
+    }
+  }
+}

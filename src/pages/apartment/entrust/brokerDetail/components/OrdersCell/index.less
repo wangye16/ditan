@@ -1,0 +1,76 @@
+.cellContainer {
+  position: relative;
+  padding: 40px 0px;
+  border-bottom: 1px solid #eaeaea;
+  border-radius: 1px;
+}
+
+.apartmentIcon {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  display: inline-block;
+  vertical-align: middle;
+  // background-size: 80px 80px;
+  // background-position: center center;
+
+  img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+    object-fit: cover;
+    object-position: center;
+  }
+}
+
+.apartmentInfo {
+  display: inline-block;
+  height: 80px;
+  margin: 0 20px;
+  vertical-align: middle;
+
+  .name {
+    margin: 1px 0 8px 0;
+    height: 40px;
+    font-size: 30px;
+    font-family: PingFangSC-Medium, PingFang SC;
+    font-weight: 500;
+    color: rgba(31, 35, 38, 1);
+    line-height: 40px;
+  }
+
+  .info {
+    margin: 8px 0 1px 0;
+    height: 30px;
+    font-family: PingFangSC-Regular, PingFang SC;
+    font-weight: 400;
+    color: rgba(153, 153, 153, 1);
+
+    .qualityScore {
+      padding: 0 10px 0 0;
+      border-right: 1px solid #d8d8d8;
+      font-size: 24px;
+      line-height: 24px;
+    }
+
+    .receivedPerson {
+      padding: 0 0 0 10px;
+      font-size: 24px;
+      line-height: 24px;
+    }
+  }
+}
+
+.apartmentStatus {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  height: 40px;
+  font-size: 28px;
+  font-family: PingFangSC-Regular, PingFang SC;
+  font-weight: 400;
+  color: rgba(255, 85, 46, 1);
+  line-height: 40px;
+  vertical-align: middle;
+}
